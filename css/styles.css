@@ -1,0 +1,364 @@
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   background-color: #f5f7fa;
+}
+
+h1, h2, h3, h4, p, ul {
+   margin: 0;
+}
+
+ul {
+   padding: 0;
+   list-style: none;
+}
+
+/* *WRAPPER */
+
+.main-wrapper {
+   display: flex;
+   flex-direction: row-reverse;
+   width: 1200px;
+   background-color: #fff;
+   margin: 40px auto;
+   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* *RIGHT-SIDE */
+
+.right-wrapper {
+   padding: 100px 90px;
+}
+
+/* *About */
+.about {
+   margin-bottom: 40px;
+}
+
+.about__title {
+   font-family: Montserrat;
+   font-weight: 700;
+   font-size: 45px;
+   line-height: 1.22;
+   margin-bottom: 25px;
+}
+
+.about__text {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   color: #595959;
+}
+
+/* .about-me-profession {
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 17px;
+   color: #000;
+   margin-bottom: 20px;
+} */
+
+
+/* *Experience */
+
+.experience {
+   margin-bottom: 45px;
+}
+
+.experience__title {
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 1.23;
+   margin-bottom: 10px;
+   color: #000000;
+}
+
+.company {
+   margin-bottom: 20px;
+}
+
+.company__title {
+   margin-bottom: 10px;
+}
+
+.company__title--orange {
+   color: #fb6d3a;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.25;
+   margin: 0 0 10px 0;
+}
+
+.company__text {
+
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.25;
+   color: #a8a8a8;
+   margin: 0 0 10px 0;
+}
+
+.company__text--divider {
+   color: #000000;
+}
+
+.responsibility {
+   padding-left: 18px;
+}
+
+.responsibility__item {
+   font-family: Montserrat;
+
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   color: #595959;
+}
+
+/* *Education */
+
+.education__title {
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 1.23;
+   margin-bottom: 10px;
+   color: #000000;
+}
+
+.school:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+.school__title {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.25;
+   color: #fb6d3a;
+   margin-bottom: 10px;
+}
+
+.school__text {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.21;
+}
+
+.school__text:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.school__text--black {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.21;
+   color: #000000;
+}
+
+.school__text--small {
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+   color: #a8a8a8;
+}
+
+.school__text--divider {
+   color: #000000;
+}
+
+.National-Aviation-University-faculty {
+
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 17px;
+   color: #000;
+   margin-bottom: 10px;
+}
+
+
+.National-Aviation-University-specialty {
+
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   color: #595959;
+   margin-bottom: 20px;
+}
+
+
+
+.Lower-post-secondary-vocational-education {
+   color: #fb6d3a;
+   margin-bottom: 10px;
+}
+
+.Lower-post-secondary-vocational-education-time {
+
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+   color: #a8a8a8;
+   margin-bottom: 20px;
+}
+
+
+
+.Lower-post-secondary-vocational-education-specialty {
+
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   color: #595959;
+
+}
+
+.Online-training {
+   color: #fb6d3a;
+   margin-bottom: 10px;
+}
+
+.Online-training-time {
+
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 15px;
+   color: #a8a8a8;
+}
+
+
+
+.Online-training-name {
+
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   color: #595959;
+}
+
+/* Left-side-section */
+
+.left-side-section {
+   background-color: #1e2939;
+   width: 370px;
+   padding: 40px 0;
+}
+
+.Contact-section,
+.Tech-skills-section,
+.Soft-skills-section {
+   margin: 50px 0 0 40px;
+}
+
+.Section-title {
+
+   font-weight: bold;
+   font-size: 22px;
+   line-height: 27px;
+   color: #fff;
+   margin-bottom: 10px;
+}
+
+/* Contact section */
+.Contact-section-type {
+
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 24px;
+   color: #fff;
+   margin-right: 7px;
+}
+
+.Contact-section-link {
+
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   color: #646c77;
+   margin-right: 7px;
+}
+
+.Contact-section-linkedin {
+   margin-top: 20px;
+}
+
+.Contact-section-qr {
+   margin-top: 10px;
+}
+
+.Professional-summary-Section-title {
+
+   font-weight: bold;
+   font-size: 22px;
+   line-height: 27px;
+   color: #fff;
+   padding: 0 40px 0 40px;
+}
+
+.Professional-summary-text {
+
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   color: #fff;
+   padding: 0 40px 0 40px;
+}
+
+.Tech-Soft-lists {
+   padding: 0 20px 0 17px;
+}
+
+.Tech-Soft-items {
+   color: #fb6d3a;
+}
+
+.Tech-Soft-items-text {
+
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   color: #fff;
+}
+
+.Certificates-License-title {
+
+   font-weight: bold;
+   font-size: 22px;
+   line-height: 27px;
+   color: #fff;
+   padding: 0 40px 0 40px;
+   margin-bottom: 5px;
+}
+
+.Certificates-License-aviation-windenergy-title {
+
+   font-weight: bold;
+   font-size: 17px;
+   line-height: 27px;
+   color: #fff;
+   padding: 0 40px 0 40px;
+   margin: 10px 0 5px 0;
+}
+
+.Certificates-License-lists {
+   margin: 0 20px 0 20px;
+}
+
+.Certificates-License-items {
+   color: #fb6d3a;
+}
+
+.Certificates-License-items-text {
+
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   color: #fff;
+}
+
+.Certificates-License-windenergy-items-text {
+
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 24px;
+   color: #fff;
+}
