@@ -25,6 +25,7 @@ body {
 
 .title {
    margin-bottom: 10px;
+   padding: 10px;
    font-weight: 700;
    font-size: 22px;
    line-height: 1.17;
