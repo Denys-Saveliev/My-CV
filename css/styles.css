@@ -1,7 +1,39 @@
+:root {
+   --primary-text-color: #595959;
+   --secondary-text-color: #ffffff;
+   --title-text-color: #000000;
+   --accent-color: #fb6d3a;
+   --primary-bg-color: #f5f7fa;
+   --secondary-bg-color: #2f4f4f;
+   --primary-font-size: 14px;
+}
+
 body {
+   margin: 5px;
    font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
    font-style: normal;
-   background-color: #f5f7fa;
+   line-height: 1.71;
+   color: var(--primary-text-color);
+   background-color: var(--primary-bg-color);
+}
+
+.section {
+   padding: 0 20px;
+   margin-bottom: 15px;
+}
+
+.title {
+   margin-bottom: 10px;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 1.17;
+   letter-spacing: .03em;
+   text-align: center;
+   border-radius: 5px;
+   color: var(--title-text-color);
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
 }
 
 h1, h2, h3, h4, p, ul {
@@ -13,325 +45,128 @@ ul {
    list-style: none;
 }
 
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
 /* *WRAPPER */
 
 .main-wrapper {
-   display: flex;
-   flex-direction: row-reverse;
-   width: 1200px;
+   border-radius: 10px;
    background-color: #fff;
-   margin: 40px auto;
-   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* *RIGHT-SIDE */
-
-.right-wrapper {
-   padding: 100px 90px;
+   /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1); */
 }
 
 /* *About */
 .about {
-   margin-bottom: 40px;
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   background-color: var(--secondary-bg-color);
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.about__title {
-   font-family: Montserrat;
-   font-weight: 700;
-   font-size: 45px;
+.about__image {
+   width: 70px;
+   height: 60px;
+   margin-right: 20px;
+   border-radius: 5px;
+}
+
+.box {
+   width: 100%;
+}
+
+.wrapper-name {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 3px;
+}
+
+.wrapper-name__title {
+   font-weight: 500;
+   font-size: var(--primary-font-size);
    line-height: 1.22;
-   margin-bottom: 25px;
+   color: var(--secondary-text-color);
 }
 
-.about__text {
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.71;
-   color: #595959;
+.wrapper-name__text {
+   font-size: 10px;
+   line-height: 1.19;
+   opacity: .5;
+   color: var(--secondary-text-color);
 }
 
-/* .about-me-profession {
-   font-style: normal;
-   font-weight: bold;
-   font-size: 14px;
-   line-height: 17px;
-   color: #000;
-   margin-bottom: 20px;
-} */
-
-
-/* *Experience */
-
-.experience {
-   margin-bottom: 45px;
+.wrapper-link {
+   display: flex;
+   justify-content: space-between;
+   border-top: 2px solid var(--secondary-text-color);
 }
 
-.experience__title {
-   font-weight: 700;
-   font-size: 22px;
-   line-height: 1.23;
-   margin-bottom: 10px;
-   color: #000000;
+.contacts-list__item, .social-list__item {
+   line-height: 1.11;
 }
 
-.company {
-   margin-bottom: 20px;
-}
-
-.company__title {
-   margin-bottom: 10px;
-}
-
-.company__title--orange {
-   color: #fb6d3a;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.25;
-   margin: 0 0 10px 0;
-}
-
-.company__text {
-
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 1.25;
-   color: #a8a8a8;
-   margin: 0 0 10px 0;
-}
-
-.company__text--divider {
-   color: #000000;
-}
-
-.responsibility {
-   padding-left: 18px;
-}
-
-.responsibility__item {
-   font-family: Montserrat;
-
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.71;
-   color: #595959;
-}
-
-/* *Education */
-
-.education__title {
-   font-weight: 700;
-   font-size: 22px;
-   line-height: 1.23;
-   margin-bottom: 10px;
-   color: #000000;
-}
-
-.school:not(:last-child) {
-   margin-bottom: 20px;
-}
-
-.school__title {
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.25;
-   color: #fb6d3a;
-   margin-bottom: 10px;
-}
-
-.school__text {
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.21;
-}
-
-.school__text:not(:last-child) {
-   margin-bottom: 10px;
-}
-
-.school__text--black {
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.21;
-   color: #000000;
-}
-
-.school__text--small {
-   font-weight: normal;
-   font-size: 12px;
-   line-height: 15px;
-   color: #a8a8a8;
-}
-
-.school__text--divider {
-   color: #000000;
-}
-
-
-
-/* *LEFT SIDE */
-
-/* *Contacts */
-
-.left-wrapper {
-   background-color: #1e2939;
-   width: 370px;
-   padding: 40px 0;
-}
-
-.picture {
-   width: 370px;
-   margin-bottom: 50px;
-}
-
-.navigation {
-   padding: 0 40px;
-   margin-bottom: 45px;
-   text-align: center;
-}
-
-.navigation__title {
-   font-weight: 700;
-   font-size: 22px;
-   line-height: 1.23;
-   margin-bottom: 8px;
-   color: #FFFFFF;
-}
-
-.contacts__item:not(:last-child) {
-   margin-bottom: 8px;
-}
-
-.contacts__icon {
-   color: #FFFFFF;
-}
-
-.contacts__link {
+.contacts-list__link, .social-list__link {
    text-decoration: none;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.71;
-   color: #FFFFFF;
-   opacity: 0.5;
+   font-size: 10px;
+   opacity: .5;
+   color: var(--secondary-text-color);
 }
 
-.summary {
-   position: relative;
-   padding: 0 40px;
-   margin-bottom: 45px;
-   text-align: center;
+/* *Summary */
+
+.summary__text {
+   font-size: var(--primary-font-size);
+
+   text-indent: 5px;
+   color: var(--primary-text-color);
 }
 
-.summary-list {
-   margin-bottom: 15px;
-}
+/* *Project */
 
-.summary-list__item a {
-   text-decoration: none;
-   font-weight: 700;
-   font-size: 22px;
-   line-height: 1.23;
-   color: #FFFFFF;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.summary-list__item:hover a {
-   color: grey;
-}
-
-.summary-list .summary-text__item {
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.71;
-   color: #FFFFFF;
-   display: none;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), ;
-}
-
-.summary-list:hover .summary-text__item,
-.summary-list:focus .summary-text__item {
-   position: absolute;
-   top: 40px;
-   left: 30px;
-   display: block;
-   color: lightgray;
-}
-
-.summary-text__item {
-   padding: 10px;
-   text-align: left;
-   width: 290px;
-   border-radius: 4px;
-   background-color: #1e2939;
-   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-
-}
-
-
-
-
-
-
-
-.Tech-skills-section {
-   padding: 0 40px;
-}
-
-.Tech-Soft-lists {
-   padding: 0 20px 0 17px;
-}
-
-.Tech-Soft-items {
-   color: #fb6d3a;
-}
-
-.Tech-Soft-items-text {
-
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 24px;
-   color: #fff;
-}
-
-.Certificates-License-title {
-
-   font-weight: bold;
-   font-size: 22px;
-   line-height: 27px;
-   color: #fff;
-   padding: 0 40px 0 40px;
+.project__subtitle {
    margin-bottom: 5px;
 }
 
-.Certificates-License-aviation-windenergy-title {
-
-   font-weight: bold;
-   font-size: 17px;
-   line-height: 27px;
-   color: #fff;
-   padding: 0 40px 0 40px;
-   margin: 10px 0 5px 0;
+.project__link {
+   font-size: 16px;
+   color: var(--secondary-bg-color);
 }
 
-.Certificates-License-lists {
-   margin: 0 20px 0 20px;
+.project-list {
+   text-indent: -16px;
+   padding-left: 16px;
 }
 
-.Certificates-License-items {
-   color: #fb6d3a;
+.project-list__item {
+   font-size: var(--primary-font-size);
+   color: var(--primary-text-color);
 }
 
-.Certificates-License-items-text {
-
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 24px;
-   color: #fff;
+.project-list__item::before {
+   content: "\21D2 ";
+   margin-right: 5px;
+   color: var(--secondary-bg-color);
 }
 
-.Certificates-License-windenergy-items-text {
+/* *Work experience */
 
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 24px;
-   color: #fff;
+.experience__subtitle {
+   font-size: 16px;
+   color: var(--secondary-bg-color);
+}
+
+.experience__text {
+   font-size: var(--primary-font-size);
+   color: var(--primary-text-color);
+}
+
+.experience__text--divider {
+   color: var(--secondary-bg-color);
 }

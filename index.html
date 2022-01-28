@@ -5,338 +5,119 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My CV</title>
+   <title>CV of DS</title>
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="css\styles.css">
 </head>
 
 <body>
    <!--*WRAPPER-->
    <div class="main-wrapper">
+      <!-- *--------------------------About-------------------------->
+      <header class="about">
+         <img class="about__image" src="./Img/IMG_2020.JPG" alt="Denys Saveliev">
+         <div class="box">
+            <div class="wrapper-name">
+               <h1 class="wrapper-name__title">Denys Saveliev</h1>
+               <p class="wrapper-name__text">Front-End Developer</p>
+            </div>
 
-      <!-- *RIGHT SIDE -->
-
-      <div class="right-wrapper">
-
-         <div class="about">
-            <h1 class="about__title">Denys Saveliev</h1>
-            <q class="about__text">It is necessary that the working conditions themselves, and not the managers and
-               leaders make people work ...
-            </q>
-            - Ryutaro Hashimoto.
+            <div class="wrapper-link">
+               <ul class="contacts-list">
+                  <li class="contacts-list__item">
+                     <a class="contacts-list__link" href="tel:+380736897909">+38 (073) 689 79 09</a>
+                  </li>
+                  <li class="contacts-list__item">
+                     <a class="contacts-list__link" href="mailto:denys.saveliev@ukr.net">denys.saveliev@ukr.net</a>
+                  </li>
+               </ul>
+               <ul class="social-list">
+                  <li class="social-list__item">
+                     <a class="social-list__link" href="https://github.com/Denys-Saveliev" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+                  </li>
+                  <li class=" social-list__item">
+                     <a class="social-list__link" href="https://www.linkedin.com/in/denys-saveliev211284/"
+                        target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  </li>
+               </ul>
+            </div>
          </div>
+      </header>
 
-         <!-- *Experience -->
-         <section class="experience">
-            <h2 class="experience__title">My work experience</h2>
-
-            <div class="company">
-               <h3 class="company__title">Field Service Engineer / <span class="company__title--orange">GE Ukraine
-                     LLC</span></h3>
-               <p class="company__text">Mar 2019 — Apr 2021 <span class="company__text--divider">|</span>
-                  Ukraine</p>
-               <ul class="responsibility">
-                  <li class="responsibility__item">Effectively troubleshoot and repair all mechanical and electrical
-                     aspects of WTG.
-                  </li>
-                  <li class="responsibility__item">Lead large component repairs of and/or exchanges such as bearings
-                     of generators, gearboxes, pitch motors.
-                  </li>
-                  <li class="responsibility__item">Authorized Inspector of SRK-15 and SPARK (emergency evacuation
-                     equipment).
-                  </li>
-                  <li class="responsibility__item">Ability to work independently on the implementation of fault
-                     analyses and repair of WTG systems.
-                  </li>
-                  <li class="responsibility__item">Planned and preventive maintenance of WTG systems.
-                  </li>
-                  <li class="responsibility__item">Documenting of call-out responses, fault finding and repair work
-                     in service reports, logbooks and checklists.
-                  </li>
-                  <li class="responsibility__item">Keeping reports on the work done, writing off the replaced units,
-                     materials and time spent via service requests in the Oracle system.
-                  </li>
-                  <li class="responsibility__item">Maintaining accounting and order in the warehouse of spare parts
-                     and tools.
-                  </li>
-                  <li class="responsibility__item">Help to train and teach entry level technicians.
-                  </li>
-
-               </ul>
-            </div>
-
-            <div class="company">
-               <h3 class="company__title">Aircraft Engineer / <span class="company__title--orange">Aviation Company
-                     “Bukovyna” and
-                     “Bravo”</span></h3>
-               <p class="company__text">Jul 2013 — Dec 2018 <span class="company__text--divider">|</span> Ukraine/Iran
-               </p>
-
-               <ul class="responsibility">
-                  <li class="responsibility__item">Maintenance and repair of Boeing McDonell Douglas 80-series
-                     aircraft and Pratt & Whitney JT8D-200-series aircraft engines.
-                  </li>
-                  <li class="responsibility__item">Work at the base airport of the airline and other airports
-                     including other countries.
-                  </li>
-                  <li class="responsibility__item">Inspection of the aircraft before departure and after arrival -
-                     maintenance.
-                  </li>
-                  <li class="responsibility__item">Carry out daily checks / service checks according to the
-                     manufacturer's instructions.
-                  </li>
-                  <li class="responsibility__item">Identification, analysis and elimination of any defects and
-                     breakdowns of aircraft systems / components.
-                  </li>
-                  <li class="responsibility__item">Line and Base maintenance.
-                  </li>
-                  <li class="responsibility__item">Working with technical documentation.
-                  </li>
-               </ul>
-            </div>
-
-            <div class="company">
-               <h3 class="company__title">Aircraft Engineer / <span class="company__title--orange">Aviation Company
-                     “Dniproavia”</span>
-               </h3>
-
-               <p class="company__text">Jul 2010 — Jul 2013 <span class="company__text--divider">|</span> Ukraine</p>
-
-               <ul class="responsibility">
-                  <li class="responsibility__item">Maintenance and repair of Embraer-145 aircraft and Rolls-Royce
-                     AE3007A series aircraft engines.
-                  </li>
-                  <li class="responsibility__item">Work at the base airport of the airline and other airports in the
-                     country.
-                  </li>
-                  <li class="responsibility__item">Inspection of the aircraft before departure and after arrival -
-                     maintenance.
-                  </li>
-                  <li class="responsibility__item">Carry out daily checks / weekly checks according to the
-                     manufacturer's instructions.
-                  </li>
-                  <li class="responsibility__item">Identification, analysis and elimination of any defects and
-                     breakdowns of aircraft systems / components.
-                  </li>
-                  <li class="responsibility__item">Line and Base maintenance.
-                  </li>
-                  <li class="responsibility__item">Working with technical documentation.
-                  </li>
-               </ul>
-
-               <p>One year experience as MCC Engineer (Maintenance Control Centre), witch included:</p>
-
-               <ul class="responsibility">
-                  <li class="responsibility__item">Functional testing of the aircraft fleet airlines.
-                  </li>
-                  <li class="responsibility__item">Control list of deferred defects.
-                  </li>
-                  <li class="responsibility__item">Planning timely implementation of planned activities.
-                  </li>
-                  <li class="responsibility__item">Analysis of the causes of failures and malfunctions of systems and
-                     units of aircrafts, disadvantages and errors team performance, to take measures to prevent them.
-                  </li>
-                  <li class="responsibility__item">Coordination with the department of planning maintenance plans.
-                  </li>
-                  <li class="responsibility__item">Control order and delivery of components and consumables,
-                     aggregates.
-               </ul>
-            </div>
-
-            <div class="company">
-               <h3 class="company__title">Quality Engineer, maintenance and repair of helicopters and engines / <br>
-                  <span class="company__title--orange">Aviation company “Motor-Sych”</span>
-               </h3>
-               <p class="company__text">Apr 2010 — Jun 2010 <span class="company__text--divider">|</span> Ukraine</p>
-
-               <ul class="responsibility">
-                  <li class="responsibility__item">Maintenance and repair of helicopters Mi-8.
-                  </li>
-               </ul>
-            </div>
-
-            <div class="company">
-               <h3 class="company__title">Pre-production Engineer with functions of the engineer of technical /<br>
-                  <span class="company__title--orange">Aviation company “Constanta”</span>
-               </h3>
-               <p class="company__text">Aug 2008 — Feb 2010 <span class="company__text--divider">|</span> Ukraine</p>
-
-               <ul class="responsibility">
-                  <li class="responsibility__item">Accounting depreciation and track of time engines “AI-25” and
-                     aircraft Yak-40.
-                  </li>
-                  <li class="responsibility__item">Issuance and tracking of work on aircraft.
-                  </li>
-                  <li class="responsibility__item">Work with the technical documentations.
-                  </li>
-                  <li class="responsibility__item">Filling out of applications for the issuance of the certificates
-                     for aircraft airlines.
-                  </li>
-                  <li class="responsibility__item">Consultancy inspectors from State Aviation Administration during
-                     life extension of aircrafts and/or aircraft engines.
-                  </li>
-                  <li class="responsibility__item">Line and Base maintenance.
-                  </li>
-               </ul>
-            </div>
-
-            <div class="company">
-               <h3 class="company__title">Aircraft Maintenance Technician / <span
-                     class="company__title--orange">Aviation company
-                     “Constanta”</span></h3>
-               <p class="company__text">Aug 2006 — Aug 2008 <span class="company__text--divider">|</span> Ukraine</p>
-
-               <ul class="responsibility">
-                  <li class="responsibility__item">Line and Base maintenance aircraft Yak-40 and AI-25 engines.
-                  </li>
-               </ul>
-            </div>
+      <main>
+         <!-- *-------------------------Summary------------------------ -->
+         <section class=" summary section">
+            <h2 class="summary__title title">
+               SUMMARY
+            </h2>
+            <p class="summary__text">In this moment I'm student of GoIt school on course Full Stack
+               Developer. Reliable
+               and
+               purposeful. Aimed at achieving results,
+               investing 100% of
+               myself in the business entrusted to me. I use
+               high quality and honesty in the tasks and goals for myself and the company.
+               I would like to find an opportunity to expand my skills and acquire new ones. Motivated
+               continue
+               learn and grow as a
+               Full Stack Developer.</p>
          </section>
-
-         <!-- *Education -->
-
-         <section class="education">
-            <h3 class="education__title">Education</h3>
-
-            <div class="school">
-               <h4 class="school__title">National Aviation University
-               </h4>
-               <p class="school__text school__text--black">Aviation and Aerospace</p>
-               <p class="school__text school__text--small">Sep 2003 — Dec 2009 <span
-                     class="school__text--divider">|</span> Ukraine</p>
-               <p class="school__text">Specialty: Production, maintenance and repair of
-                  aircrafts
-                  and aircraft engines</p>
-            </div>
-
-            <div class="school">
-               <h4 class="school__title">Lower-post-secondary-vocational-education
-               </h4>
-               <p class="school__text school__text--small">Sep 2000 — Jun 2003 <span
-                     class="school__text--divider">|</span>
-                  Ukraine</p>
-
-               <p class="school__text">Specialty: Car Mechanic</p>
-            </div>
-
-            <div class="school">
-               <h4 class="school__title">Online training in the portal «Udemy»
-               </h4>
-               <p class="school__text school__text--small">Mar 2021 <span class="school__text--divider">|</span> Ukraine
-               </p>
-
-               <p class="school__text">«New Manager: The Basics and More of Being a Great Leader»</p>
-            </div>
-         </section>
-      </div>
-
-      <!-- *LEFT SIDE -->
-      <aside class="left-wrapper">
-         <img class="picture" src="Img/444.jpg" alt="Denys">
-
-         <nav class="navigation">
-            <h3 class="navigation__title">Contacts</h3>
-            <ul class="contacts">
-               <li class="contacts__item">
-                  <span class="contacts__icon">&#9743 :</span>
-                  <a class="contacts__link" href="tel:+380736897909">+38 (073) 689 79 09</a>
+         <!-- *-------------------------Project---------------------- -->
+         <section class="project section">
+            <h2 class="project__title title">
+               PROJECT EXPERIENCE
+            </h2>
+            <h3 class="project__subtitle"><a class="project__link"
+                  href="https://denys-saveliev.github.io/goit-markup-hw-08/" target="_blank"
+                  rel="noopener noreferrer">Web
+                  Studio</a></h3>
+            <ul class="project-list">
+               <li class="project-list__item">HTML5, CSS3, SCSS, BEM, mobile first, adaptive/responsive layout.
                </li>
-               <li class="contacts__item">
-                  <span class="contacts__icon">&#9993 :</span>
-                  <a class="contacts__link" href="mailto:denda084@gmail.com">denda084@gmail.com</a>
-               </li>
-               <div class="social">
-                  <img class="social__code" width="70" src="Img\qr.jpg" alt="QR">
-                  <img class="social__icon" width="35" src="Img\linkedin.jpg" alt="linkedin">
-               </div>
+               <li class="project-list__item">Website about web studio service.</li>
+               <li class="project-list__item">Personal project.</li>
             </ul>
-         </nav>
 
-         <section class="summary">
-            <ul class="summary-list">
-               <li class="summary-list__item">
-                  <a href="">Professional summary</a>
+            <h3 class="project__subtitle"><a class="project__link"
+                  href="https://nataliakif.github.io/IceCream-project8/" target="_blank" rel="noopener noreferrer">Ice
+                  cream</a></h3>
+            <ul class="project-list">
+               <li class="project-list__item">HTML5, CSS3, SCSS, BEM, mobile first, adaptive/responsive layout.
                </li>
-               <ul class="summary-text">
-                  <li class="summary-text__item">
-                     <p>Reliable and purposeful. Aimed at achieving results,
-                        investing 100% of
-                        myself in the business entrusted to me. I use
-                        high quality and honesty in the tasks and goals for myself and the company.
-                        I would like to find an opportunity to expand my skills and acquire new ones. Motivated to
-                        continue
-                        to
-                        learn and grow in
-                        Lead positions.</p>
-                  </li>
-               </ul>
+               <li class="project-list__item">Website about company which made and sales tasty ice cream for everyone
+                  who loves them.</li>
+               <li class="project-list__item">Team project, role: developer.</li>
+               <li class="project-list__item">Section: header/hero.</li>
+            </ul>
+
+            <h3 class="project__subtitle"><a class="project__link" href="https://denys-saveliev.github.io/My-CV/"
+                  target="_blank" rel="noopener noreferrer">My CV</a></h3>
+            <ul class="project-list">
+               <li class="project-list__item">HTML5, CSS3, SCSS, BEM, mobile first, adaptive/responsive layout.
+               </li>
+               <li class="project-list__item">Information about me.</li>
+               <li class="project-list__item">Personal project.</li>
             </ul>
          </section>
 
-         <!-- <div class="Tech-skills-section">
-            <h3 class="Section-title">Tech Skills</h3>
-            <ul class="Tech-Soft-lists">
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Reading mech. / electrical
-                     drawings</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Mechanics</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Electrical</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Troubleshooting</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">MS Office, etc.</span></li>
-            </ul>
-         </div>
+         <!-- *------------------------Work experience------------------>
+         <section class="experience section">
+            <h2 class="experience__title title">WORK EXPERIENCE</h2>
+            <h3 class="experience__subtitle">GE Ukraine LLC</h3>
+            <p class="experience__text">Field Service Engineer <span class="experience__text--divider">|</span> Mar2019
+               - Apr2021</p>
+         </section>
 
-         <div class="Soft-skills-section">
-            <h3 class="Section-title">Soft Skills</h3>
-            <ul class="Tech-Soft-lists">
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Prioritizing important tasks and ensuring
-                     that they are completed first</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Teamwork</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Decision making</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Reliability</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Time management</span></li>
-               <li class="Tech-Soft-items"> <span class="Tech-Soft-items-text">Management</span></li>
-            </ul>
-         </div>
-
-         <div class="Certificates-License">
-            <h3 class="Certificates-License-title">Certificates/Licenses</h3>
-            <h4 class="Certificates-License-aviation-windenergy-title">Aviation sector :</h4>
-            <ul class="Certificates-License-lists">
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">AML Part-66 UA,
-                     B1.1</span></li>
-            </ul>
-            <h4 class="Certificates-License-aviation-windenergy-title">Wind Energy sector :</h4>
-            <ul class="Certificates-License-lists">
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">GWO (Global Wind
-                     Organization) – valid till APR 2021</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">Working at Heights
-                     GWO Standard - valid till APR 2021</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">First Aid GWO
-                     Standard - valid till APR 2021</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-windenergy-items-text">Manual
-                     Handling GWO Standard - valid till APR 2021</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">Fire Awareness GWO
-                     Standard - valid till APR 2021</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">GE Up Tower Repair
-                     Training (UTR)</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">Tech Safety Lines
-                     (TSL) – Authorized Inspector</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">Operation of
-                     rope-guided service lift GLOBALlift R- Hailo Service lift- valid till FEB 2023</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">GE 3.6 DFIG Basic
-                     Training</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">GE 3.x DFIG
-                     Preventive Maintenance Training</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">GE 3.x DFIG
-                     Corrective Maintenance Training</span></li>
-               <li class="Certificates-License-items"><span class="Certificates-License-items-text">GE 3.x DFIG
-                     Practical Maintenance Training</span></li>
-            </ul>
-         </div> -->
-      </aside>
+         <!-- *------------------------Education------------------------>
+         <section class="education"></section>
+      </main>
    </div>
 </body>
 
