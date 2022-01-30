@@ -104,7 +104,7 @@ img {
 
 .main-wrapper {
    border-radius: 10px;
-   background-color: #fff;
+   background-color: #ffffff;
 }
 
 @media screen and (min-width: 1280px) {
@@ -248,6 +248,11 @@ img {
    color: var(--secondary-text-color);
 }
 
+.contacts-list__link:hover,
+.social-list__link:hover {
+   color: #3CFD63;
+}
+
 @media screen and (min-width:768px) {
    .contacts-list__link, .social-list__link {
       font-size: 10px;
@@ -322,6 +327,11 @@ img {
 .project__link {
    font-size: 16px;
    color: var(--secondary-bg-color);
+}
+
+.project__link:hover {
+   color: #05F736;
+
 }
 
 .project-list {
