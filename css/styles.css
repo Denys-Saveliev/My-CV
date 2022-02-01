@@ -128,7 +128,7 @@ img {
 @media screen and (min-width: 768px) {
    .header {
       margin-bottom: 30px;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: flex-start;
    }
 }
@@ -136,19 +136,26 @@ img {
 @media screen and (min-width: 1280px) {
    .header {
       flex-direction: column;
+      justify-content: space-evenly;
       min-width: 370px;
       padding: 30px 40px;
       margin: 10px 0 10px 10px;
    }
 }
 
+.header__box {
+   text-align: center;
+}
+
+
 .header__img {
    width: 125px;
+   margin: 0 auto 10px auto;
 }
 
 @media screen and (min-width: 768px) {
    .header__img {
-      margin-right: 20px;
+      margin: 0 auto 20px auto;
    }
 }
 
@@ -156,7 +163,49 @@ img {
    .header__img {
       min-width: 290px;
       margin-right: 0;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
+   }
+}
+
+.header__title {
+   margin-bottom: 3px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.45;
+   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width:768px) {
+   .header__title {
+      font-size: 18px;
+   }
+}
+
+@media screen and (min-width: 1280px) {
+   .header__title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 22px;
+   }
+}
+
+.header__text {
+   font-size: 12px;
+   line-height: 1.19;
+   opacity: .5;
+   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+   .header__text {
+      font-size: 10px;
+   }
+}
+
+@media screen and (min-width: 1280px) {
+   .header__text {
+      text-align: center;
+      font-size: var(--primary-font-size);
    }
 }
 
@@ -179,46 +228,13 @@ img {
 }
 
 .box__title {
-   margin-bottom: 3px;
+   margin-bottom: 7px;
    font-weight: 500;
-   font-size: 20px;
+   font-size: 18px;
    line-height: 1.45;
-   border-bottom: 2px solid var(--secondary-text-color);
    color: var(--secondary-text-color);
 }
 
-@media screen and (min-width:768px) {
-   .box__title {
-      font-size: 18px;
-   }
-}
-
-@media screen and (min-width: 1280px) {
-   .box__title {
-      font-weight: 700;
-      font-size: 22px;
-   }
-}
-
-.box__text {
-   margin-bottom: 15px;
-   font-size: 12px;
-   line-height: 1.19;
-   opacity: .5;
-   color: var(--secondary-text-color);
-}
-
-@media screen and (min-width: 768px) {
-   .box__text {
-      font-size: 10px;
-   }
-}
-
-@media screen and (min-width: 1280px) {
-   .box__text {
-      font-size: var(--primary-font-size);
-   }
-}
 
 .contacts-list__item, .social-list__item {
    text-align: right;
@@ -242,7 +258,6 @@ img {
 }
 
 .contacts-list__link, .social-list__link {
-   text-decoration: none;
    font-size: 12px;
    opacity: .5;
    color: var(--secondary-text-color);
@@ -275,18 +290,11 @@ img {
    }
 }
 
-@media screen and (min-width: 1280px) {
-   .wrapper-skills:not(:last-child) {
-      margin-bottom: 30px;
-   }
-}
-
 .wrapper-skills__title {
-   margin-bottom: 3px;
+   margin-bottom: 7px;
    font-weight: 500;
    font-size: 18px;
    line-height: 1.45;
-   border-bottom: 2px solid var(--secondary-text-color);
    color: var(--secondary-text-color);
 }
 
@@ -303,7 +311,7 @@ img {
 }
 
 .characteristic-list__item::before {
-   content: "\21D2 ";
+   content: "\2022 ";
    margin-right: 5px;
 
 }
@@ -340,14 +348,35 @@ img {
 }
 
 .project-list__item::before {
-   content: "\21D2 ";
+   content: "\2022";
+   font-weight: bold;
    margin-right: 5px;
    color: var(--secondary-bg-color);
+}
+
+.project-list__link {
+   color: var(--primary-text-color);
 }
 
 /* *Work experience */
 
 .experience__text--divider {
+   color: var(--secondary-bg-color);
+}
+
+.experience-wrapper:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.experience-list {
+   text-indent: -16px;
+   padding-left: 16px;
+}
+
+.experience-list__item::before {
+   content: "\2022";
+   font-weight: bold;
+   margin-right: 5px;
    color: var(--secondary-bg-color);
 }
 
@@ -390,7 +419,7 @@ img {
 .skills-list__item::before,
 .soft-list__item::before,
 .language-list__item::before {
-   content: "\21D2 ";
+   content: "\2022 ";
    margin-right: 5px;
    color: var(--secondary-bg-color);
 }

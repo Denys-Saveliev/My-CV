@@ -22,13 +22,18 @@
 
       <!-- *--------------------------Header-------------------------->
       <header class="header">
-         <img class="header__img" src="./Img/IMG_2020.png" alt="Denys Saveliev">
+         <div class="header__box"><img class="header__img" src="./Img/IMG_2020.png" alt="Denys Saveliev">
+            <h1 class="header__title">Denys Saveliev</h1>
+            <p class="header__text">Front-End Developer</p>
+         </div>
 
          <div class="box">
-            <h1 class="box__title">Denys Saveliev</h1>
-            <p class="box__text">Front-End Developer</p>
-
+            <h2 class="box__title">Contacts</h2>
             <ul class="contacts-list">
+               <li class="contacts-list__item">
+                  <a class="contacts-list__link" href="https://goo.gl/maps/vunHnKbPJFtsJJaa9" target="_blank"
+                     rel="noopener noreferrer">Zaporizhzhia, Ukraine</a>
+               </li>
                <li class="contacts-list__item">
                   <a class="contacts-list__link" href="mailto:denys.saveliev@ukr.net">denys.saveliev@ukr.net</a>
                </li>
@@ -113,6 +118,9 @@
                      rel="noopener noreferrer">Web
                      Studio</a></h3>
                <ul class="project-list">
+                  <li class="project-list__item"><a class="project-list__link"
+                        href="https://github.com/Denys-Saveliev/goit-markup-hw-08" target="_blank"
+                        rel="noopener noreferrer">Project link</a></li>
                   <li class="project-list__item">HTML5, CSS3, SCSS, BEM, mobile first, adaptive/responsive layout.
                   </li>
                   <li class="project-list__item">Website about web studio service.</li>
@@ -124,6 +132,9 @@
                      rel="noopener noreferrer">Ice
                      cream</a></h3>
                <ul class="project-list">
+                  <li class="project-list__item"><a class="project-list__link"
+                        href="https://github.com/nataliakif/IceCream-project8" target="_blank"
+                        rel="noopener noreferrer">Project link</a></li>
                   <li class="project-list__item">HTML5, CSS3, SCSS, BEM, mobile first, adaptive/responsive layout.
                   </li>
                   <li class="project-list__item">Website about company which made and sales tasty ice cream for everyone
@@ -135,6 +146,9 @@
                <h3 class="project__subtitle"><a class="project__link" href="https://denys-saveliev.github.io/My-CV/"
                      target="_blank" rel="noopener noreferrer">My CV</a></h3>
                <ul class="project-list">
+                  <li class="project-list__item"><a class="project-list__link"
+                        href="https://github.com/Denys-Saveliev/My-CV" target="_blank" rel="noopener noreferrer">Project
+                        link</a></li>
                   <li class="project-list__item">HTML5, CSS3, SCSS, BEM, mobile first, adaptive/responsive layout.
                   </li>
                   <li class="project-list__item">Information about me.</li>
@@ -147,10 +161,61 @@
          <section class="experience section">
             <div class="container">
                <h2 class="experience__title title">WORK EXPERIENCE</h2>
-               <h3 class="experience__subtitle subtitle">GE Ukraine LLC</h3>
-               <p class="experience__text">Field Service Engineer <span class="experience__text--divider">|</span>
-                  Mar2019
-                  - Apr2021</p>
+               <div class="experience-wrapper">
+                  <h3 class="experience__subtitle subtitle">GE Ukraine LLC</h3>
+                  <p class="experience__text">Field Service Engineer <span class="experience__text--divider">|</span>
+                     Mar2019
+                     - Apr2021</p>
+                  <ul class="experience-list">
+                     <li class="experience-list__item">Effectively troubleshoot and repair all mechanical and electrical
+                        aspects of Wind Turbine
+                        Generators
+                     </li>
+                     <li class="experience-list__item">Lead large component repairs of and/or exchanges such as bearings
+                        of
+                        generators, gearboxes, pitch
+                        motors</li>
+                     <li class="experience-list__item">Authorized Inspector of SRK-15 and SPARK (emergency evacuation
+                        equipment)</li>
+                  </ul>
+               </div>
+
+               <div class="experience-wrapper">
+                  <h3 class="experience__subtitle subtitle">Aviation Company Bukovyna / Bravo</h3>
+                  <p class="experience__text">Aircraft Engineer <span class="experience__text--divider">|</span>
+                     Jul2013
+                     - Dec2018</p>
+                  <ul class="experience-list">
+                     <li class="experience-list__item">Maintenance and repair of Boeing McDonell Douglas 80-series
+                        aircraft and Pratt & Whitney JT8D-200-series aircraft
+                        engines
+                     </li>
+                     <li class="experience-list__item">Work at the base airport of the airline and other airports
+                        including
+                        other countries</li>
+                     <li class="experience-list__item">Identification, analysis and elimination of any defects and
+                        breakdowns of aircraft systems / components</li>
+                     <li class="experience-list__item">Working with technical documentation</li>
+                  </ul>
+               </div>
+
+               <div class="experience-wrapper">
+                  <h3 class="experience__subtitle subtitle">Aviation Company Dniproavia</h3>
+                  <p class="experience__text">Aircraft Engineer <span class="experience__text--divider">|</span>
+                     Jul2010
+                     - Jul2013</p>
+                  <ul class="experience-list">
+                     <li class="experience-list__item">Maintenance and repair of Embraer-145 aircraft and Rolls-Royce
+                        AE3007A series aircraft engines
+                     </li>
+                     <li class="experience-list__item">Work at the base airport of the airline and other airports in
+                        the country</li>
+                     <li class="experience-list__item">Identification, analysis and elimination of any defects and
+                        breakdowns of aircraft systems / components</li>
+                     <li class="experience-list__item">Working with technical documentation</li>
+                  </ul>
+               </div>
+
             </div>
          </section>
 
